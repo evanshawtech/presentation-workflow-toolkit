@@ -1,0 +1,26 @@
+{
+  "deck_goal": "Demonstrate a valid page-plan schema",
+  "audience": "Developers",
+  "duration": "1 minute",
+  "target_slide_count": 1,
+  "language": "en",
+  "narrative_arc": [
+    "one synthetic example"
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "role": "example",
+      "title": "Synthetic plan example",
+      "core_message": "This is a plan, not a rendered result.",
+      "required_evidence": [],
+      "required_source_material": [],
+      "visual_strategy": "A simple text slide",
+      "must_keep": [
+        "synthetic label"
+      ],
+      "can_drop": [],
+      "notes": "No client or research material."
+    }
+  ]
+}

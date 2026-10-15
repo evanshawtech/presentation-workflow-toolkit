@@ -1,0 +1,8 @@
+.cache/
+projects/
+output/
+skills-src/
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["deck_goal", "audience", "duration", "target_slide_count", "language", "narrative_arc", "slides"],
+  "properties": {
+    "deck_goal": {"type": "string", "minLength": 1},
+    "audience": {"type": "string", "minLength": 1},
+    "duration": {"type": ["string", "number", "null"]},
+    "target_slide_count": {"type": "integer", "minimum": 1},
+    "language": {"type": "string", "minLength": 1},
+    "narrative_arc": {"type": ["string", "array"]},
+    "slides": {"type": "array", "minItems": 1, "items": {
+      "type": "object",
+      "required": ["slide_number", "role", "title", "core_message", "required_evidence", "required_source_material", "visual_strategy", "must_keep", "can_drop", "notes"],
+      "properties": {
+        "slide_number": {"type": "integer", "minimum": 1},
+        "role": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "core_message": {"type": "string", "minLength": 1},
+        "required_evidence": {"type": "array"},
+        "required_source_material": {"type": "array"},
+        "visual_strategy": {"type": "string", "minLength": 1},
+        "must_keep": {"type": "array"},
+        "can_drop": {"type": "array"},
+        "notes": {"type": ["string", "array"]}
+      }
+    }}
+  }
+}
